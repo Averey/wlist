@@ -43,11 +43,9 @@ impl App {
                         RichText::new("❌").text_style(TextStyle::Body),
                     ));
                     if close_btn.clicked() {
-                        //frame.quit();
+                        ctx.send_viewport_cmd(egui::ViewportCommand::Close);
                     }
-                    if ui.button("❌").clicked() {
 
-                    }
                     if ui.button("🔄").clicked() {
 
                     }
